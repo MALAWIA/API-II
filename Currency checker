@@ -17,3 +17,20 @@ System.out.print("Enter amount: ");
 
                                               System.out.print("To currency (e.g., KES): ");
                                                             String toCurrency = scanner.next().toUpperCase();
+            // API endpoint
+            String urlStr = "https://api.exchangerate.host/convert?from=" 
+                            + fromCurrency + "&to=" + toCurrency + "&amount=" + amount;
+
+            // Make request
+            URL url = new URL(urlStr);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+
+            // Read response
+            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
