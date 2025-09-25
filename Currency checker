@@ -34,3 +34,15 @@ System.out.print("Enter amount: ");
                 response.append(inputLine);
             }
             in.close();
+            // Parse JSON
+            JSONObject obj = new JSONObject(response.toString());
+            double result = obj.getDouble("result");
+
+            System.out.println("\n💱 " + amount + " " + fromCurrency + " = " 
+                               + result + " " + toCurrency);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
