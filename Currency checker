@@ -9,3 +9,11 @@ public class CurrencyConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
+System.out.print("Enter amount: ");
+            double amount = scanner.nextDouble();
+
+                        System.out.print("From currency (e.g., USD): ");
+                                    String fromCurrency = scanner.next().toUpperCase();
+
+                                              System.out.print("To currency (e.g., KES): ");
+                                                            String toCurrency = scanner.next().toUpperCase();
