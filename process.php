@@ -7,7 +7,6 @@ class Product {
         $this->conn = $db;
     }
 
-    // ✅ Add a new product (cloth)
     public function add($name, $description, $price, $size, $category_id, $stock) {
         $sql = "INSERT INTO {$this->table} (name, description, price, size, category_id, stock)
                 VALUES (:name, :description, :price, :size, :category_id, :stock)";

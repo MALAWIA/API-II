@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // --- ADDED ---
   const productNameInput = document.getElementById('product_name'); 
-  // --- END ADDED ---
 
   const priceInput = document.getElementById('price');
   const stockInput = document.getElementById('stock');

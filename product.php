@@ -45,7 +45,6 @@ class Product {
         return false;
     }
 
-    // --- START: ADD THIS NEW METHOD ---
 
     /**
      * Fetches all products from the database
