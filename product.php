@@ -45,6 +45,10 @@ class Product {
         return false;
     }
 
+<<<<<<< HEAD
+=======
+    // --- START: ADD THIS NEW METHOD ---
+>>>>>>> 611ad7d7c5de580eea32608f462c2caf5309802c
 
     /**
      * Fetches all products from the database

@@ -42,7 +42,6 @@ class Product {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // ✅ Update product details
     public function update($id, $name, $description, $price, $size, $category_id, $stock) {
         $sql = "UPDATE {$this->table} 
                 SET name = :name, description = :description, price = :price,

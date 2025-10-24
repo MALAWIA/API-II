@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get the form and the elements we need
   const productForm = document.getElementById('productForm');
   
-  // --- ADDED ---
   const productNameInput = document.getElementById('product_name'); 
+<<<<<<< HEAD
+=======
+  // --- END ADDED ---
+>>>>>>> 611ad7d7c5de580eea32608f462c2caf5309802c
 
   const priceInput = document.getElementById('price');
   const stockInput = document.getElementById('stock');
@@ -59,6 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
       errorMessage.style.display = 'block';
     }
     // If there are no errors, the form submits normally.
+<<<<<<< HEAD
   });
+=======
+  });
+>>>>>>> 611ad7d7c5de580eea32608f462c2caf5309802c
 
 });
