@@ -3,7 +3,6 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   
-  // Get the form and the elements we need
   const productForm = document.getElementById('productForm');
   
   const productNameInput = document.getElementById('product_name'); 

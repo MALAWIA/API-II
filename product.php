@@ -29,7 +29,6 @@ class Product {
         $price = htmlspecialchars(strip_tags($price));
         $stock = htmlspecialchars(strip_tags($stock));
 
-        // Bind the sanitized parameters
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':category', $category);
         $stmt->bindParam(':price', $price);

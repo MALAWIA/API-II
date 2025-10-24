@@ -33,7 +33,6 @@ class Product {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    // ✅ Get single product
     public function getById($id) {
         $sql = "SELECT * FROM {$this->table} WHERE id = :id";
         $stmt = $this->conn->prepare($sql);
