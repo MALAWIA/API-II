@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 $servername = "localhost";
 $username = "root"; // or your DB username
-$password = "1234"; // or your DB password
+$password = "1234"; 
 $database = "clothing_store";
 
 $conn = new mysqli($servername, $username, $password, $database);

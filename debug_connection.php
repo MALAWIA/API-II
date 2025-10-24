@@ -1,7 +1,5 @@
 <?php
-// FILE: debug_connection.php
 
-// Use the exact same config file as your application
 require_once 'config.php';
 
 echo "<h1>Debugging Database Connection</h1>";
